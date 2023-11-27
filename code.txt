@@ -1,0 +1,242 @@
+        #region Test
+        //public void M()
+        //{
+
+        //    var elevators = new List<Elevator>();
+        //    object rOnly = true;
+        //    object SaveChanges = false;
+        //    object MissingObj = System.Reflection.Missing.Value;
+        //    Microsoft.Office.Interop.Excel.Application app = new Microsoft.Office.Interop.Excel.Application();
+        //    Microsoft.Office.Interop.Excel.Workbooks workbooks = null;
+        //    Microsoft.Office.Interop.Excel.Workbook workbook = null;
+        //    Microsoft.Office.Interop.Excel.Sheets sheets = null;
+        //    try
+        //    {
+        //        workbooks = app.Workbooks;
+        //        workbook = workbooks.Open(Path, MissingObj, rOnly, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj);
+        //        sheets = workbook.Sheets;
+        //        foreach (Microsoft.Office.Interop.Excel.Worksheet worksheet in sheets)
+        //        {
+        //            Microsoft.Office.Interop.Excel.Range UsedRange = worksheet.UsedRange;
+        //            Microsoft.Office.Interop.Excel.Range urRows = UsedRange.Rows;
+        //            Microsoft.Office.Interop.Excel.Range urColums = UsedRange.Columns;
+        //            int RowsCount = urRows.Count;
+        //            int ColumnsCount = urColums.Count;
+        //            for (int i = 5; i <= RowsCount; i++)
+        //            {
+        //                for (int j = 2; j <= ColumnsCount; j++)
+        //                {
+        //                    Microsoft.Office.Interop.Excel.Range CellRange = UsedRange.Cells[i, j];
+        //                    string CellText = (CellRange == null || CellRange.Value2 == null) ? null :
+        //                                        (CellRange as Microsoft.Office.Interop.Excel.Range).Value2.ToString();
+
+        //                    if (CellText != null)
+        //                    {
+        //                        elevators.Add(new Elevator
+        //                        {
+        //                            _orgCode = CellText,
+        //                        });
+        //                        switch (j)
+        //                        {
+        //                            case 2:
+        //                                Console.WriteLine($"{CellText}");
+        //                                street = CellText;
+        //                                break;
+        //                            case 3:
+        //                                Console.WriteLine($"{CellText}");
+        //                                home = CellText;
+        //                                break;
+        //                            case 4:
+        //                                Console.WriteLine($"{CellText}");
+        //                                orgRegionCode = CellText;
+        //                                break;
+        //                            case 14:
+        //                                Console.WriteLine($"{CellText}");
+        //                                summ = CellText;
+        //                                break;
+        //                            case 15:
+        //                                Console.WriteLine($"{CellText}");
+        //                                rateACT = CellText;
+        //                                break;
+        //                            case 16:
+        //                                Console.WriteLine($"{CellText}");
+        //                                ACTsumm = CellText;
+        //                                break;
+        //                            case 17:
+        //                                Console.WriteLine($"{CellText}");
+        //                                summWhithACT = CellText;
+        //                                break;
+        //                        }
+        //                        Console.WriteLine($"Street: {street} Home: {home} OrgRegionCode: {orgRegionCode} Summ: {summ} RateACT: {rateACT} ACTSumm {ACTsumm} SummWhithACT {summWhithACT}");
+        //                    }
+        //                }
+        //            }
+        //            if (urRows != null) Marshal.ReleaseComObject(urRows);
+        //            if (urColums != null) Marshal.ReleaseComObject(urColums);
+        //            if (UsedRange != null) Marshal.ReleaseComObject(UsedRange);
+        //            if (worksheet != null) Marshal.ReleaseComObject(worksheet);
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+        //    finally
+        //    {
+        //        if (sheets != null) Marshal.ReleaseComObject(sheets);
+        //        if (workbook != null)
+        //        {
+        //            workbook.Close(SaveChanges);
+        //            Marshal.ReleaseComObject(workbook);
+        //            workbook = null;
+        //        }
+
+        //        if (workbooks != null)
+        //        {
+        //            workbooks.Close();
+        //            Marshal.ReleaseComObject(workbooks);
+        //            workbooks = null;
+        //        }
+        //        if (app != null)
+        //        {
+        //            app.Quit();
+        //            Marshal.ReleaseComObject(app);
+        //            app = null;
+        //        }
+        //    }
+        //    return;
+        //}
+        #endregion
+
+
+
+        //private (bool, string) CheckSheetName(string sheetName)
+        //{
+        //    object rOnly = true;
+        //    object SaveChanges = false;
+        //    object MissingObj = System.Reflection.Missing.Value;
+        //    Microsoft.Office.Interop.Excel.Application app = new Microsoft.Office.Interop.Excel.Application();
+        //    Microsoft.Office.Interop.Excel.Workbooks workbooks = null;
+        //    Microsoft.Office.Interop.Excel.Workbook workbook = null;
+        //    Microsoft.Office.Interop.Excel.Sheets sheets = null;
+        //    try
+        //    {
+        //        workbooks = app.Workbooks;
+        //        workbook = workbooks.Open(Path, MissingObj, rOnly, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj);
+        //        sheets = workbook.Sheets;
+        //        foreach (Microsoft.Office.Interop.Excel.Worksheet ws in sheets)
+        //        {
+        //            if (ws.Name.Equals(sheetName))
+        //                Console.WriteLine(ws.Name);
+        //            else
+        //                Console.WriteLine("Check Sheet Name");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+        //    finally
+        //    {
+        //        if (sheets != null) Marshal.ReleaseComObject(sheets);
+        //        if (workbook != null)
+        //        {
+        //            workbook.Close(SaveChanges);
+        //            Marshal.ReleaseComObject(workbook);
+        //            workbook = null;
+        //        }
+
+        //        if (workbooks != null)
+        //        {
+        //            workbooks.Close();
+        //            Marshal.ReleaseComObject(workbooks);
+        //            workbooks = null;
+        //        }
+        //        if (app != null)
+        //        {
+        //            app.Quit();
+        //            Marshal.ReleaseComObject(app);
+        //            app = null;
+        //        }
+        //    }
+
+        //    return (true, "июль");
+        //}
+
+        //public string ElevatorsData(int row, int colomn, string sheetName)
+        //{
+        //    object rOnly = true;
+        //    object SaveChanges = false;
+        //    object MissingObj = System.Reflection.Missing.Value;
+        //    Microsoft.Office.Interop.Excel.Application app = new Microsoft.Office.Interop.Excel.Application();
+        //    Microsoft.Office.Interop.Excel.Workbooks workbooks = null;
+        //    Microsoft.Office.Interop.Excel.Workbook workbook = null;
+        //    Microsoft.Office.Interop.Excel.Sheets sheets = null;
+        //    try
+        //    {
+        //        workbooks = app.Workbooks;
+        //        workbook = workbooks.Open(Path, MissingObj, rOnly, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj, MissingObj);
+        //        sheets = workbook.Sheets;
+        //        foreach (Microsoft.Office.Interop.Excel.Worksheet ws in sheets)
+        //        {
+        //            if (ws.Name.Equals(sheetName))
+        //                Console.WriteLine(ws.Name);
+        //            else
+        //                Console.WriteLine("Check Sheet Name");
+        //        }
+        //        //foreach (Microsoft.Office.Interop.Excel.Worksheet worksheet in sheets)
+        //        //{
+        //        //    Microsoft.Office.Interop.Excel.Range UsedRange = worksheet.UsedRange;
+        //        //    Microsoft.Office.Interop.Excel.Range urRows = UsedRange.Rows;
+        //        //    Microsoft.Office.Interop.Excel.Range urColums = UsedRange.Columns;
+        //        //    int RowsCount = urRows.Count;
+        //        //    int ColumnsCount = urColums.Count;
+        //        //    //for (int i = row; i <= RowsCount; i++)
+        //        //    //{
+        //        //    //    for (int j = colomn; j <= ColumnsCount; j++)
+        //        //    //    {
+        //        //            Microsoft.Office.Interop.Excel.Range CellRange = UsedRange.Cells[row, colomn];
+        //        //            string CellText = (CellRange == null || CellRange.Value2 == null) ? null :
+        //        //                                (CellRange as Microsoft.Office.Interop.Excel.Range).Value2.ToString();
+
+        //        //            if (CellText != null)
+        //        //            {
+        //        //                value = CellText;
+        //        //            }
+        //        //    //    }
+        //        //    //}
+        //        //    if (urRows != null) Marshal.ReleaseComObject(urRows);
+        //        //    if (urColums != null) Marshal.ReleaseComObject(urColums);
+        //        //    if (UsedRange != null) Marshal.ReleaseComObject(UsedRange);
+        //        //    if (worksheet != null) Marshal.ReleaseComObject(worksheet);
+        //        //}
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine(ex.Message);
+        //    }
+        //    finally
+        //    {
+        //        if (sheets != null) Marshal.ReleaseComObject(sheets);
+        //        if (workbook != null)
+        //        {
+        //            workbook.Close(SaveChanges);
+        //            Marshal.ReleaseComObject(workbook);
+        //            workbook = null;
+        //        }
+
+        //        if (workbooks != null)
+        //        {
+        //            workbooks.Close();
+        //            Marshal.ReleaseComObject(workbooks);
+        //            workbooks = null;
+        //        }
+        //        if (app != null)
+        //        {
+        //            app.Quit();
+        //            Marshal.ReleaseComObject(app);
+        //            app = null;
+        //        }
+        //    }
+        //    return value;
+        //}
